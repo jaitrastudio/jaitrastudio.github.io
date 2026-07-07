@@ -163,6 +163,17 @@
   .card::after{
     content:"";position:absolute;inset:12px;border:1px solid rgba(212,181,124,.28);pointer-events:none;
   }
+  /* photo cards */
+  .card.photo{padding:0;}
+  .card.photo img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    transition:transform .6s cubic-bezier(.19,1,.22,1);
+  }
+  .card.photo:hover img{transform:scale(1.04);}
+  .card.photo .meta{
+    position:relative;width:100%;padding:1.6rem 1.8rem 1.5rem;
+    background:linear-gradient(to top, rgba(26,19,13,.88) 20%, rgba(26,19,13,0));
+  }
 
   /* ---------- craft ---------- */
   #craft{background:var(--espresso);color:var(--bone-dim);}
@@ -262,6 +273,48 @@
           <svg viewBox="0 0 100 70" aria-hidden="true"><path d="M14 18 L40 18 L46 26 L86 26 L86 56 L14 56 Z"/><line x1="14" y1="34" x2="86" y2="34"/></svg>
           <h3>The Document Folder</h3>
           <p>A4 papers, uncreased</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block reveal">
+      <h3 class="collection-title">Desk Organisers · Seher</h3>
+      <div class="grid">
+        <div class="card photo grain">
+          <img src="images/mughal-arch.jpg" alt="Mughal Arch desk organiser in sage green leather">
+          <div class="meta"><h3>Mughal Arch</h3><p>Sage green</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/rajasthani-jaal.jpg" alt="Rajasthani Jaal desk organiser in terracotta leather">
+          <div class="meta"><h3>Rajasthani Jaal</h3><p>Terracotta</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/jaipur-jaali.jpg" alt="Jaipur Jaali desk organiser in ivory leather with cutwork">
+          <div class="meta"><h3>Jaipur Jaali</h3><p>Ivory cutwork</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/elephant-tale.jpg" alt="Elephant Tale desk organiser in sand leather">
+          <div class="meta"><h3>Elephant Tale</h3><p>Sand</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/peacock-courtyard.jpg" alt="Peacock Courtyard desk organiser in sage green leather">
+          <div class="meta"><h3>Peacock Courtyard</h3><p>Sage green</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/lotus-lane.jpg" alt="Lotus Lane desk organiser in terracotta leather with lotus motif">
+          <div class="meta"><h3>Lotus Lane</h3><p>Terracotta, lotus motif</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/sheesh-mahal.jpg" alt="Sheesh Mahal desk organiser in sage green leather">
+          <div class="meta"><h3>Sheesh Mahal</h3><p>Sage green</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/hawa-mahal.jpg" alt="Hawa Mahal desk organiser in terracotta leather">
+          <div class="meta"><h3>Hawa Mahal</h3><p>Terracotta</p></div>
+        </div>
+        <div class="card photo grain">
+          <img src="images/raj-bagh.jpg" alt="Raj Bagh desk organiser in ivory leather">
+          <div class="meta"><h3>Raj Bagh</h3><p>Ivory</p></div>
         </div>
       </div>
     </div>
